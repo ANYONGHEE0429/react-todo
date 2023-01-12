@@ -23,6 +23,7 @@ const List = React.memo(
         return data;
       });
       setTodoData(newTodoData);
+      JSON.stringify([...todoData, newTodoData]);
     };
 
     const handleEditChange = (e) => {
@@ -39,6 +40,7 @@ const List = React.memo(
         return data;
       });
       setTodoData(newTodoData);
+      JSON.stringify([...todoData, newTodoData]);
 
       setIsEditing(false);
     };
